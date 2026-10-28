@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Little Lemon</h1>
+        <p class="tagline">Chicago &middot; Mediterranean kitchen</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Little Lemon</h2>
+            <p>
+                We are a family-owned Mediterranean restaurant, focused on traditional
+                recipes served with a modern twist.
+            </p>
+        </section>
+
+        <section class="api">
+            <h2>Little Lemon API</h2>
+            <p>This page is served by Django as static HTML. The API endpoints are:</p>
+            <ul>
+                <li><code>/auth/users/</code> &mdash; register a user (POST)</li>
+                <li><code>/restaurant/api-token-auth/</code> &mdash; get a token (POST)</li>
+                <li><code>/restaurant/menu/</code> &mdash; menu items (GET, POST)</li>
+                <li><code>/restaurant/menu/&lt;id&gt;</code> &mdash; one menu item (GET, PUT, PATCH, DELETE)</li>
+                <li><code>/restaurant/booking/tables/</code> &mdash; table bookings (GET, POST, PUT, PATCH, DELETE)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Little Lemon</p>
+    </footer>
+</body>
+</html>
